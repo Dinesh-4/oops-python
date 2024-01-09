@@ -7,11 +7,11 @@ class Car:
 
 
     def __str__(self):
-        return("vruuuuu..... {} Engine is Online. Car No: {}".format(self.make, self.rego))
+        return("vruuuuu..... {} Engine is Online. Car No: {}. I am from __str()__".format(self.make, self.rego))
 
 
-    # def start(self):
-    #     print("vruuuuu..... {} Engine is Online. Car No: {}".format(self.make, self.rego))
+    def start(self):
+        print("vruuuuu..... {} Engine is Online. Car No: {}".format(self.make, self.rego))
 
 
 
@@ -19,3 +19,5 @@ class Car:
 
 car1 = Car("BMW", "M4", 4567 )
 print(car1)
+car1.start()
+
