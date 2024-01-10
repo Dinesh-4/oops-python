@@ -13,3 +13,20 @@ def say_hello():
 
 say_hello()
 
+
+### Without Decorator ###
+print(end="\n")
+
+def log_before_and_after(func):
+    print(f"Before {func.__name__} is Called.")
+    func()
+    print(f"Before {func.__name__} is Called.")
+
+
+def greeting():
+    print("Hello, World!")
+
+
+log_before_and_after(greeting())
+
+
