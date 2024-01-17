@@ -1,4 +1,6 @@
 from store.Car import Car
+from store.Automobile import Automobile
+from store.Bike import Bike
 
 car1 = Car("BMW", "M4", 4567 )
 car1.start()
@@ -43,4 +45,25 @@ print(Car.type)
 a.type = "Hatchback"
 print("A's Type : " + a.type)
 print(a.make)
+
+
+#------------------------------
+#Automobile class
+
+d = Automobile("Bugadii", "N3", "TN89R1234")
+# d.make = "Bugadii 8D"
+print(d.make)
+
+c = Car.build_from_automobile(d)
+c.start()
+
+
+#------------ BIke
+
+B = Bike("KTM", "Duke", "TN23N1243")
+
+B.make = "KTM TM"
+print(B.make)
+
+
 
